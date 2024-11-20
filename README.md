@@ -1,2 +1,2 @@
 # pit_2
- Trabalho acadêmico na Cruzeiro.
+ Trabalho acadêmico Cruzeiro, disciplina "Projeto Integrador Transdisciplinar de Engenharia de Software II"
