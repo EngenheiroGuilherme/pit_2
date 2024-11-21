@@ -21,3 +21,7 @@ django-admin startproject pit_ii .
 ``` bash
 python manage.py runserver
 ```
+
+``` bash
+python manage.py startapp app_main
+```
