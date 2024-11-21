@@ -2,18 +2,36 @@
 <html>
 <head>
     <title>Task List</title>
+    <!-- Adicionando o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Task List</h1>
-    <a href="{% url 'create_task' %}">Create New Task</a>
-    <ul>
-        {% for task in tasks %}
-            <li>
-                {{ task.title }} - {{ task.description }} - {{ task.status|yesno:"Completed,Pending" }}
-                <a href="{% url 'update_task' task.id %}">Edit</a>
-                <a href="{% url 'delete_task' task.id %}">Delete</a>
-            </li>
-        {% endfor %}
-    </ul>
+<body class="container mt-4">
+    <h1 class="text-center mb-4">Task List</h1>
+    <div class="text-end mb-3">
+        <a href="{% url 'create_task' %}" class="btn btn-primary">Create New Task</a>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for task in tasks %}
+            <tr>
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+                <td>{{ task.status|yesno:"Completed,Pending" }}</td>
+                <td>
+                    <a href="{% url 'update_task' task.id %}" class="btn btn-sm btn-warning">Edit</a>
+                    <a href="{% url 'delete_task' task.id %}" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
