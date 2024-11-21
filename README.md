@@ -25,3 +25,11 @@ python manage.py runserver
 ``` bash
 python manage.py startapp app_main
 ```
+
+``` bash
+python manage.py makemigrations
+```
+
+``` bash
+python manage.py migrate
+```
