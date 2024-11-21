@@ -1,5 +1,5 @@
 # pit_2
- Trabalho acadêmico Cruzeiro, disciplina "Projeto Integrador Transdisciplinar de Engenharia de Software II"
+ Trabalho acadêmico Cruzeiro, disciplina "Projeto Integrador Transdisciplinar II"
 
 
 ``` bash
