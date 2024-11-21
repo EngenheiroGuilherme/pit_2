@@ -37,3 +37,12 @@ python manage.py migrate
 ``` bash
 python manage.py runserver
 ```
+
+"""
+Acesse as rotas:
+
+/: Lista de tarefas.
+/tasks/create: Criar uma nova tarefa.
+/tasks/update/<id>: Editar uma tarefa.
+/tasks/delete/<id>: Deletar uma tarefa.
+"""
